@@ -1,0 +1,58 @@
+[
+	{
+        "question": "Hi",
+        "answer": "Hello"
+    },
+    {
+        "question": "Hello",
+        "answer": "Hi"
+    },
+	{
+        "question": "How are you?",
+        "answer": "I'm very well, thank you. How about yourself?"
+    },
+	{
+        "question": "I'm okay",
+        "answer": "That's great!"
+    },
+	{
+        "question": "What is the weather today?",
+        "answer": "Can you be more specific?"
+    },
+    {
+        "question": "Thank you",
+        "answer": "You're welcome. Is there anything else I can assist you today?"
+    },
+    {
+        "question": "Goodbye",
+        "answer": "Thank you for chatting with me. I hope I was able to help you. Have a good day!"
+    },
+    {
+        "question": "What is the weather tomorrow?",
+        "answer": "Sorry, I can't predict weather just yet."
+    },
+	{
+        "question": "What is the weather today in Cambridge,UK?",
+        "answer": "{\"callAPI\": true, \"param\": {\"keyword\": \"description\",\"location\": \"Cambridge,UK\", \"response\" : \"The weather today in Cambridge, UK is <placeholder>\" }}"
+    },
+	{
+        "question": "What is the temperature today in Cambridge,UK?",
+        "answer": "{\"callAPI\": true, \"param\": {\"keyword\": \"temp\",\"location\": \"Cambridge,UK\", \"response\" : \"The temperature today in Cambridge, UK is <placeholder> °C\" }}"
+    },
+	{
+        "question": "What is the humidity today in Cambridge,UK?",
+        "answer": "{\"callAPI\": true, \"param\": {\"keyword\": \"humidity\",\"location\": \"Cambridge,UK\", \"response\" : \"The humidity today in Cambridge, UK is <placeholder> %\" }}"
+    },
+	{
+        "question": "What is the weather today in Melbourne,AU?",
+        "answer": "{\"callAPI\": true, \"param\": {\"keyword\": \"description\",\"location\": \"Melbourne,AU\", \"response\" : \"The weather condition today in Melbourne, AU is <placeholder>\" }}"
+    },
+	{
+        "question": "What is the temperature today in Melbourne,AU?",
+        "answer": "{\"callAPI\": true, \"param\": {\"keyword\": \"temp\",\"location\": \"Melbourne,AU\", \"response\" : \"The temperature today in Melbourne, AU is <placeholder> C\" }}"
+    },
+	{
+        "question": "What is the humidity today in Melbourne,AU?",
+        "answer": "{\"callAPI\": true, \"param\": {\"keyword\": \"humidity\",\"location\": \"Melbourne,AU\", \"response\" : \"The humidity today in Melbourne, AU is <placeholder> %\" }}"
+    }
+]

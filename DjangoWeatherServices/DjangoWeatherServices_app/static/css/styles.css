@@ -1,0 +1,214 @@
+.center {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.header {
+	background-color: #000080;
+	width:100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 2em;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.menu {
+	background-color: #000080;
+	width:100%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.menu a {
+	color: white;
+	text-decoration: none;
+}
+
+.menu_home {
+    width: 25%;
+    text-align: right;
+}
+
+.menu_aboutUs {
+    width: 10%;
+    text-align: right;
+}
+
+.menu_customerFeedback {
+    width: 15%;
+    text-align: center;
+}
+
+.menu_future {
+    width: 10%;
+}
+
+.menu_weatherApp {
+    width: 10%;
+}
+
+.menu_chatBot {
+    width: 25%;
+}
+
+.headerText {
+    font-weight: bold;
+    font-size: 1.4em;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.future {
+    font-size: 1.4em;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+.leftMargin {
+    width: 10%;
+}
+
+.rightMargin {
+    width: 10%;
+}
+
+.bigLeftMargin {
+    width: 30%;
+}
+
+.bigRightMargin {
+    width: 30%;
+}
+
+.contactForm {
+    width:100%;
+    padding-left:30%;
+    padding-right:30%;
+}
+
+.searchWeatherDataForm {
+    width:100%;
+    padding-left:40%;
+    padding-right:40%;
+}
+
+
+.chatForm {
+    width:100%;
+    padding-left:30%;
+    padding-right:30%;
+}
+
+.submitButton {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+	background-color: #000080;
+	color: #fff;
+	width: 230px;
+	padding: 12px 28px;
+	border-radius: 8px;
+	font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif;
+	border: 2px solid #fff;
+	cursor: pointer;
+}
+
+.searchButton {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+	background-color: #000080;
+	color: #fff;
+	width: 170px;
+	padding: 12px 28px;
+	border-radius: 8px;
+	font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif;
+	border: 2px solid #fff;
+	cursor: pointer;
+}
+
+.sendButton {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+	background-color: #000080;
+	color: #fff;
+	width: 100px;
+	padding: 12px 28px;
+	border-radius: 8px;
+	font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif;
+	border: 2px solid #fff;
+	cursor: pointer;
+}
+
+input[type=text] {
+  border: 1px solid #A9A9A9;
+  border-radius: 4px;
+  height:20px;
+}
+
+#question_input {
+  border: 1px solid #A9A9A9;
+  border-radius: 4px;
+  width:500px;
+  height:35px;
+}
+
+input[type=email] {
+  border: 1px solid #A9A9A9;
+  border-radius: 4px;
+  height:20px;
+}
+
+textarea {
+  border: 1px solid #A9A9A9;
+  border-radius: 4px;
+}
+
+select {
+  border: 1px solid #A9A9A9;
+  border-radius: 4px;
+  height:20px;
+}
+
+.weatherTable {
+    border-collapse: collapse;
+	width: 70%;
+    font-size: 0.9em;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	margin-right:auto;
+	margin-left:auto;
+	border-spacing: 10px;
+    border-collapse: separate;
+}
+
+.chatBox {
+    border-collapse: collapse;
+	width: 35%;
+    font-size: 0.9em;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	margin-right:auto;
+	margin-left:auto;
+	border-spacing: 10px;
+    border-collapse: separate;
+}
+
+.chatBoxSpace {
+    height=50%;
+}

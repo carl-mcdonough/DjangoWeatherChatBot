@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Weather Services - ChatBot</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+<div class="header center">Django Weather Services</div>
+<table class="menu">
+    <tr>
+        <td class="menu_home"><a href="/">Home</a></td>
+        <td class="menu_aboutUs"><a href="/about-us">About Us</a></td>
+        <td class="menu_customerFeedback"><a href="/customer-feedback">Customer Feedback</a></td>
+        <td class="menu_future"><a href="/future">The Future</a></td>
+        <td class="menu_weatherApp"><a href="/weather-app">Weather App</a></td>
+        <td class="menu_chatBot"><a href="/chat-bot">Weather ChatBot</a></td>
+    </tr>
+</table>
+<hr>
+    <div class="center headerText">
+        Our friendly weather assistant, DjangoBot is here to assist you with your weather queries:
+    </div>
+
+    <div>
+        <br>
+        <!--Form to accept the inputs for chatBot weather data-->
+        <form action="" method="POST">
+            {% csrf_token %}
+            <table class="chatBox">
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td id="my_td">
+                                        <div><div style="color:red;display:inline;">DjangoBot</div>: Hi! I'm DjangoBot, how can I help you today?</div>&nbsp;
+                                    {% if questionText %}
+                                        <div><div style="color:green;display:inline;">You</div>: {{questionText}}</div>&nbsp;
+                                    {% endif %}
+                                    {% if answerText %}
+                                        <div><div style="color:red;display:inline;">DjangoBot</div>: {{answerText}}</div>&nbsp;
+                                    {% endif %}
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <td><input id="question_input" name="question" type="text" placeholder="type here"></td>
+                            <td></td>
+                            <td><button id="btnSend" type="submit" class="sendButton">Send</button></td>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

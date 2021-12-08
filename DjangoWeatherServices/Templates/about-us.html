@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Weather Services - About Us</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="header center">Django Weather Services</div>
+    <table class="menu">
+        <tr>
+            <td class="menu_home"><a href="/">Home</a></td>
+            <td class="menu_aboutUs"><a href="/about-us">About Us</a></td>
+            <td class="menu_customerFeedback"><a href="/customer-feedback">Customer Feedback</a></td>
+            <td class="menu_future"><a href="/future">The Future</a></td>
+            <td class="menu_weatherApp"><a href="/weather-app">Weather App</a></td>
+            <td class="menu_chatBot"><a href="/chat-bot">Weather ChatBot</a></td>
+        </tr>
+    </table>
+    <hr>
+    <table>
+        <tr>
+            <td colspan="3" class="center headerText">About Us</td>
+        </tr>
+        <tr>
+            <td class="leftMargin"></td>
+            <td>
+                <p>Django Weather Services provides weather, climate data, forecasts, warnings for any locations around the world. We have weather data for every longitude and latitude point on Earth with incredible accuracy</p>
+                <p>Our weather services offer useful information for the society to prepare and respond to weather and climate events. With proper data and best communication, we help people understand the impact of weather and make the best decisions.</p>
+                <p>We aim to make more improvements in terms of the amount of data we share and services we provide to save lives and protect property. We are driven by turning weather into opportunities.</p>
+            </td>
+            <td class="rightMargin"></td>
+        </tr>
+    </table>
+</body>
+</html>

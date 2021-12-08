@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Weather Services - Weather app</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="header center">Django Weather Services</div>
+    <table class="menu">
+        <tr>
+            <td class="menu_home"><a href="/">Home</a></td>
+            <td class="menu_aboutUs"><a href="/about-us">About Us</a></td>
+            <td class="menu_customerFeedback"><a href="/customer-feedback">Customer Feedback</a></td>
+            <td class="menu_future"><a href="/future">The Future</a></td>
+            <td class="menu_weatherApp"><a href="/weather-app">Weather App</a></td>
+            <td class="menu_chatBot"><a href="/chat-bot">Weather ChatBot</a></td>
+        </tr>
+    </table>
+    <hr>
+    <div class="center headerText">
+        To know the weather data of a location, enter the coordinates below:
+    </div>
+    <div class="searchWeatherDataForm">
+        <br>
+        <!--Form to accept the inputs for weather data-->
+        <form action="" method="POST">
+            {% csrf_token %}
+            <table>
+                <tr>
+                    <td><label for="latitude">Latitude:</label></td>
+                    <td><input id="latitude_input" name="latitude" type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="longitude">Longitude:</label></td>
+                    <td><input id="longitude_input" name="longitude" type="text"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button id="btnSearch" type="submit" class="searchButton">Search</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <!--Display Error Message if there's any-->
+    {% if error_message %}
+        <div class="error_message">{{error_message}}</div>
+    {% endif %}
+
+    <!--Display Weather Data Result-->
+    {% if current_temp %}
+    <table class="weatherTable">
+        <tr>
+            <td colspan="4" class="center headerText">
+                Weather Data
+                <hr>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="Location">Location:</label></td>
+            <td>{{location}}</td>
+            <td><label for="Condition">Condition:</label></td>
+            <td>{{condition}}</td>
+        </tr>
+        <tr>
+            <td><label for="CurrentTemperature">Current Temperature:</label></td>
+            <td>{{current_temp}}</td>
+            <td><label for="WindSpeed">Wind Speed:</label></td>
+            <td>{{wind_speed}}</td>
+        </tr>
+        <tr>
+            <td><label for="MinimumTemperature">Minimum Temperature:</label></td>
+            <td>{{min_temp}}</td>
+            <td><label for="Humidity">Humidity:</label></td>
+            <td>{{humidity}}</td>
+        </tr>
+        <tr>
+            <td><label for="MaximumTemperature">Maximum Temperature:</label></td>
+            <td>{{max_temp}}</td>
+            <td><label for="Pressure">Pressure:</label></td>
+            <td>{{pressure}}</td>
+        </tr>
+    </table>
+    {% endif %}
+</body>
+</html>

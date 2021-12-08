@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Weather Services</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="header center">Django Weather Services</div>
+    <table class="menu">
+        <tr>
+            <td class="menu_home"><a href="/">Home</a></td>
+            <td class="menu_aboutUs"><a href="/about-us">About Us</a></td>
+            <td class="menu_customerFeedback"><a href="/customer-feedback">Customer Feedback</a></td>
+            <td class="menu_future"><a href="/future">The Future</a></td>
+            <td class="menu_weatherApp"><a href="/weather-app">Weather App</a></td>
+            <td class="menu_chatBot"><a href="/chat-bot">Weather ChatBot</a></td>
+        </tr>
+    </table>
+    <hr>
+    <div class="center headerText">Welcome to Django Weather Services</div>
+
+    <div class="center">
+        <img src="{% static 'images/four-seasons.png' %}">
+    </div>
+</body>
+</html>
